@@ -1,0 +1,103 @@
+Git Commands Used in the Assignment
+
+git --version
+Displays the installed Git version.
+
+git config user.name "Abdul Rahman"
+Sets the commit author name for this repository.
+
+git config user.email "abd.turk.096@gmail.com"
+Sets the commit author email for this repository.
+
+git init -b main
+Initializes the local Git repository with main as its initial branch.
+
+git status
+Displays the current branch and the state of tracked and untracked files.
+
+git add index.html about.html
+Stages both HTML files for the initial commit.
+
+git commit -m "Initial commit: add home and about pages"
+Records the initial project files.
+
+git diff
+Displays unstaged changes before they are committed.
+
+git add index.html
+Stages changes to the home page.
+
+git commit -m "Update home page with project introduction"
+Records the introduction added to the home page.
+
+git log --oneline
+Displays a compact list of commits.
+
+git branch feature
+Creates a branch named feature.
+
+git switch feature
+Switches the working directory to the feature branch.
+
+git add about.html
+Stages changes to the about page.
+
+git commit -m "Add author information on feature branch"
+Records the author information on the feature branch.
+
+git branch
+Lists local branches and marks the current branch with an asterisk.
+
+git switch main
+Switches back to the main branch.
+
+git merge --no-ff feature -m "Merge feature branch into main"
+Merges feature into main and creates an explicit merge commit.
+
+git log --oneline --graph --all --decorate
+Displays commit history with the branch graph and branch labels.
+
+git status --short
+Displays repository changes in a compact format.
+
+git check-ignore -v debug.log temp/notes.txt
+Shows the ignore rules that match the example log file and temporary file.
+
+git add .gitignore
+Stages the ignore configuration.
+
+git commit -m "Add gitignore for log files and temp folder"
+Records rules that ignore *.log files and the temp/ folder.
+
+git commit -m "Add temporary comment for undo demonstration"
+Records a temporary change that will be undone.
+
+git show --stat HEAD
+Displays details and a file-change summary for the latest commit.
+
+git revert --no-edit HEAD
+Undoes the latest commit with a new commit, preserving the history.
+
+git log --oneline -3
+Displays the three most recent commits.
+
+git remote add origin https://github.com/abd-096/git-workflow-assignment.git
+Connects the local repository to the GitHub repository named origin.
+
+git remote -v
+Displays the configured remote URLs.
+
+git push -u origin main
+Pushes main to GitHub and sets its upstream tracking branch.
+
+git push -u origin feature
+Pushes feature to GitHub and sets its upstream tracking branch.
+
+git add git_commands.txt
+Stages this command documentation file.
+
+git commit -m "Add Git command documentation"
+Records the command documentation in the repository.
+
+git push
+Pushes new commits on the current branch to its configured upstream.
